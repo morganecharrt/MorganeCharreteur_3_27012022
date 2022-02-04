@@ -5,7 +5,7 @@
   <title></title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
@@ -14,98 +14,97 @@
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="header__logo">
-      <img class="header__logo"
-        src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/logo/ohmyfood@2x.svg"
-        alt="Logo-ohmyfood-black">
-    </a>
+  <div class=container>
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img class="header__logo"
+          src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/logo/ohmyfood@2x.svg"
+          alt="Logo-ohmyfood-black">
+      </a>
+    </header>
+    <div class="location">
+      <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
+      <div class="location__citydistrict">Paris, Belleville</div>
     </div>
-  </header>
-  <div class="location">
-    <span class="location__icon"><i class="fas fa-map-marker-alt"></i></span>
-    <div class="location__citydistrict">Paris, Belleville</div>
+    <section class="business">
+      <h1 class="business__heading">Réserver le menu qui vous convient</h1>
+      <div class="business__byline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>
+      <button class="business__button button_gradient" type="button">Explorer nos restaurants</button>
+    </section>
+    <main>
+      <section class="fonctioning">
+        <h1 class="fonctioning__heading">Fonctionnement</h1>
+        <div class="fonctioning__button fonctioning__option1">
+          <div class=fonctioning__number>1</div>
+          <span class="fonctioning__icon"><i class="fas fa-mobile-alt"></i></span>
+          <div class="fonctioning__title">Choisissez un restaurant</div>
+        </div>
+        <div class="fonctioning__button fonctioning__option2">
+          <div class=fonctioning__number>2</div>
+          <span class="fonctioning__icon"><i class="fas fa-list"></i></span>
+          <div class="fonctioning__title">Composez votre menu</div>
+        </div>
+        <div class="fonctioning__button fonctioning__option3--active">
+          <div class=fonctioning__number>3</div>
+          <span class="fonctioning__icon"><i class="fas fa-store"></i></span>
+          <div class="fonctioning__title">Dégustez au restaurant</div>
+        </div>
+      </section>
+      <section class="restaurants">
+        <h1 class="restaurant__heading">Restaurants</h1>
+        <a href="#" class="restaurant-card">
+          <div class="restaurant-card__imagetag">
+            <img class="restaurant-card__image"
+              src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="La-palette-du-gout">
+            <div class="restaurant-card__tag">Nouveau</div>
+          </div>
+          <div class="restaurant-card__text">
+            <h2 class="restaurant-card__text_title">La palette du goût</h2>
+            <div class="restaurant-card__text_byline">Ménilmontant</div>
+            <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
+          </div>
+        </a>
+        <a href="#" class="restaurant-card">
+          <div class="restaurant-card__imagetag">
+            <img class="restaurant-card__image"
+              src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="La-note-enchantee">
+            <div class="restaurant-card__tag">Nouveau</div>
+          </div>
+          <div class="restaurant-card__text">
+            <h2 class="restaurant-card__text_title">La note enchantée</h2>
+            <div class="restaurant-card__text_byline">Charonne</div>
+            <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
+          </div>
+        </a>
+        <a href="#" class="restaurant-card">
+          <img class="restaurant-card__image"
+            src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            alt="A-la-française">
+          <div class="restaurant-card__text">
+            <h2 class="restaurant-card__text_title">À la française</h2>
+            <div class="restaurant-card__text_byline">Cité Rouge</div>
+            <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
+          </div>
+        </a>
+        <a href="#" class="restaurant-card">
+          <img class="restaurant-card__image"
+            src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="Le-delice-des-sens">
+          <div class="restaurant-card__text">
+            <h2 class="restaurant-card__text_title">Le délice des sens</h2>
+            <div class="restaurant-card__text_byline">Folie-Méricourt</div>
+            <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
+          </div>
+        </a>
+      </section>
+    </main>
   </div>
-  <section class="business">
-    <h1 class="business__heading">Réserver le menu qui vous convient</h1>
-    <div class="business__byline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>
-    <button class="business__button button_gradient" type="button">Explorer nos restaurants</button>
-  </section>
-  <main>
-    <section class="fonctioning">
-      <h1 class="fonctioning__heading">Fonctionnement</h1>
-      <div class="fonctioning__button fonctioning__option1">
-        <div class=fonctioning__number>1</div>
-        <span class="fonctioning__icon"><i class="fas fa-mobile-alt"></i></span>
-        <div class="fonctioning__title">Choisissez un restaurant</div>
-      </div>
-      <div class="fonctioning__button fonctioning__option2">
-        <div class=fonctioning__number>2</div>
-        <span class="fonctioning__icon"><i class="fas fa-list"></i></span>
-        <div class="fonctioning__title">Composez votre menu</div>
-      </div>
-      <div class="fonctioning__button fonctioning__option3--active">
-        <div class=fonctioning__number>3</div>
-        <span class="fonctioning__icon"><i class="fas fa-store"></i></span>
-        <div class="fonctioning__title">Dégustez au restaurant</div>
-      </div>
-    </section>
-    <section class="restaurants">
-      <h1 class="restaurant__heading">Restaurants</h1>
-      <a href="#" class="restaurant-card">
-        <div class="restaurant-card__imagetag">
-          <img class="restaurant-card__image"
-            src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="La-palette-du-gout">
-          <div class="restaurant-card__tag">Nouveau</div>
-        </div>
-        <div class="restaurant-card__text">
-          <h2 class="restaurant-card__text_title">La palette du goût</h2>
-          <div class="restaurant-card__text_byline">Ménilmontant</div>
-          <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
-        </div>
-      </a>
-      <a href="#" class="restaurant-card">
-        <div class="restaurant-card__imagetag">
-          <img class="restaurant-card__image"
-            src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt="La-note-enchantee">
-          <div class="restaurant-card__tag">Nouveau</div>
-        </div>
-        <div class="restaurant-card__text">
-          <h2 class="restaurant-card__text_title">La note enchantée</h2>
-          <div class="restaurant-card__text_byline">Charonne</div>
-          <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
-        </div>
-      </a>
-      <a href="#" class="restaurant-card">
-        <img class="restaurant-card__image"
-          src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="A-la-française">
-        <div class="restaurant-card__text">
-          <h2 class="restaurant-card__text_title">À la française</h2>
-          <div class="restaurant-card__text_byline">Cité Rouge</div>
-          <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
-        </div>
-      </a>
-      <a href="#" class="restaurant-card">
-        <img class="restaurant-card__image"
-          src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-          alt="Le-delice-des-sens">
-        <div class="restaurant-card__text">
-          <h2 class="restaurant-card__text_title">Le délice des sens</h2>
-          <div class="restaurant-card__text_byline">Folie-Méricourt</div>
-          <span class="restaurant-card__like"><i class="far fa-heart"></i></span>
-        </div>
-      </a>
-    </section>
-  </main>
   <footer>
     <div class="footer">
-      <div class="footer__logo"><img
-          src="/Users/morganecharreteur/Documents/Dev_Openclassrooms/Openclassrooms-Project3/images/logo/ohmyfood@2x.svg"
-          alt="Logo-ohmyfood-black"></div>
-      <ul>
+      <div class="footer__logo">ohmyfood</div>
+      <ul class="footer__list">
         <li class="footer__list-inline-item"> <span class="footer__icon"><i class="fas fa-utensils"></i></span><a
             href="#">Proposer
             un restaurant</a></li>
@@ -115,6 +114,7 @@
         <li class="footer__list-inline-item"><a href="#">Mentions légales</a></li>
         <li class="footer__list-inline-item"><a href="#">Contact</a></li>
       </ul>
+    </div>
     </div>
   </footer>
   <script src="functions.js"></script>

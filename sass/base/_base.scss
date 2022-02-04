@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.25;
+}
+
+body {
+  color: black;
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

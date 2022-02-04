@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.25;
+}
+
+body {
+  color: black;
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  padding: 20px 0px 10px 0px;
+}
+
+.footer {
+  padding: 20px 0px 20px 20px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.footer__list {
+  padding: 0;
+}
+
+.footer__list-inline-item {
+  list-style: none;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.footer__icon {
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+.footer__icon .fas {
+  width: 10px;
+}
+/*# sourceMappingURL=style.css.map */
