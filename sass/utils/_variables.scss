@@ -1,7 +1,13 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
+$color-gradient: linear-gradient(
+  to bottom right,
+  $color-secondary,
+  $color-primary
+);
+
 $background-color: gray;
 
 $tittle-text: "Shrikhand", sans-serif;
-$weight-text-normal: 400;
+$font-weight-middle: 400;

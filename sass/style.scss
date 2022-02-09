@@ -1,4 +1,7 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholder";
 @import "./base/base";
 @import "./layout/layout";
-@import "./utils/mixins";
+@import "./components/components";
+@import "./pages/accueil";

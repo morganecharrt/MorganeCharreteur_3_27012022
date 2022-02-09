@@ -1,0 +1,120 @@
+.location {
+  display: flex;
+  justify-content: center;
+  font-weight: $font-weight-middle;
+  @include background-color-location;
+  color: rgb(68, 68, 68);
+  padding: 15px 0px 15px 0px;
+  box-shadow: inset 0 5px 5px -5px rgba(83, 83, 83, 0.39);
+  &__icon {
+    padding-right: 15px;
+  }
+}
+.business {
+  padding: 40px;
+  @include background-color-light;
+  &__byline {
+    margin: 10px 0;
+  }
+  &__button {
+    margin: 10px;
+  }
+}
+.fonctioning {
+  @extend %padding-bloc;
+  &__heading {
+    padding-bottom: 20px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: $font-weight-middle;
+  }
+  &__card {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    @include background-color-light;
+    border-radius: 20px;
+    position: relative;
+    left: 10px;
+    box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px,
+      rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
+  }
+  &__card--active {
+    @include background-color-light-purple;
+    &__icon {
+      color: $color-primary;
+      @extend %icon-bloc;
+    }
+  }
+  &__number {
+    background-color: $color-primary;
+    color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    padding-top: 4px;
+    position: relative;
+    right: 10px;
+  }
+  &__icon {
+    @extend %icon-bloc;
+    color: rgb(95, 95, 95);
+  }
+}
+
+.restaurant {
+  @extend %padding-bloc;
+  @include background-color-light;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  &__heading {
+    padding-bottom: 20px;
+  }
+  &__card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1),
+      0 4px 10px 0 rgba(97, 97, 97, 0.1);
+  }
+  &__image {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__imagetag {
+    position: relative;
+  }
+  &__tag {
+    background-color: $color-tertiary;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-weight: 400;
+    font-size: 13px;
+    border-radius: 2px;
+    @include color-darker;
+  }
+  &__text-like {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  &__like {
+    padding-right: 10px;
+    font-size: 22px;
+  }
+}

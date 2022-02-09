@@ -1,0 +1,11 @@
+.button_gradient {
+  font-weight: $font-weight-middle;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  border-radius: 50px;
+  background: $color-gradient;
+  font-size: 15px;
+  box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px,
+    rgba(83, 83, 83, 0.29) 0px 4px 10px -3px;
+}

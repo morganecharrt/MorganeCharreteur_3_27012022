@@ -1,2 +1,19 @@
-@mixin background-color($colour: $background-color) {
+@mixin background-color-footer($colour: $background-color) {
+  background-color: darken($colour, 30%);
+}
+
+@mixin background-color-location($colour: $background-color) {
+  background-color: lighten($colour, 40%);
+}
+
+@mixin background-color-light($colour: $background-color) {
+  background-color: lighten($colour, 46%);
+}
+
+@mixin background-color-light-purple($colour: $color-primary) {
+  background-color: lighten($colour, 35%);
+}
+
+@mixin color-darker($colour: $color-tertiary) {
+  color: darken($colour, 40%);
 }
