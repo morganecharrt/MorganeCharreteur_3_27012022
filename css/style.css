@@ -60,6 +60,36 @@ h2 {
   font-size: 18px;
 }
 
+.container {
+  -webkit-animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+  background-color: white;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header {
   padding: 20px 0px 10px 0px;
   display: -webkit-box;
@@ -118,7 +148,6 @@ h2 {
   border-radius: 50px;
   background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
   background-image: linear-gradient(to left top, #9356dc, #ff79da);
-  background-size: 200%;
   background-position: left;
   font-size: 15px;
   -webkit-box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 10px -3px;
@@ -136,6 +165,7 @@ h2 {
 }
 
 .fa-heart {
+  cursor: pointer;
   width: 24px;
   height: 48px;
   text-align: center;
@@ -155,36 +185,6 @@ h2 {
 .fa-heart:hover {
   -webkit-text-stroke-color: transparent;
   background-position: top;
-}
-
-.container {
-  -webkit-animation: fadeInAnimation ease 1s;
-          animation: fadeInAnimation ease 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-  background-color: whitesmoke;
-}
-
-@-webkit-keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes spinner {
@@ -294,6 +294,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   font-weight: 400;
 }
@@ -349,6 +352,13 @@ h2 {
 
 .restaurant {
   background-color: whitesmoke;
+}
+
+.restaurant__heading {
+  padding-bottom: 20px;
+}
+
+.restaurant__cards {
   gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,10 +370,6 @@ h2 {
   -webkit-box-pack: align-items;
       -ms-flex-pack: align-items;
           justify-content: align-items;
-}
-
-.restaurant__heading {
-  padding-bottom: 20px;
 }
 
 .restaurant__card {
@@ -381,6 +387,11 @@ h2 {
           box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1), 0 4px 10px 0 rgba(97, 97, 97, 0.1);
 }
 
+.restaurant__imagetag {
+  position: relative;
+  overflow: auto;
+}
+
 .restaurant__image {
   height: 150px;
   width: 100%;
@@ -388,10 +399,6 @@ h2 {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-}
-
-.restaurant__imagetag {
-  position: relative;
 }
 
 .restaurant__tag {
@@ -418,6 +425,31 @@ h2 {
 
 .restaurant__like {
   padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .fonctioning__cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fonctioning__card {
+    width: 45%;
+  }
+  .restaurant__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .restaurant__card {
+    width: 45%;
+  }
 }
 
 .menu__image {
@@ -486,6 +518,7 @@ h2 {
 }
 
 .menu__card {
+  cursor: pointer;
   background-color: white;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
@@ -603,7 +636,7 @@ h2 {
 
 .menu__button {
   margin-top: 40px;
-  width: 50%;
+  padding: 15px 40px 15px 40px;
 }
 
 @-webkit-keyframes fadeCard {
@@ -625,6 +658,21 @@ h2 {
   100% {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu__part-bloc {
+    width: 30%;
+  }
+  .menu__part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */

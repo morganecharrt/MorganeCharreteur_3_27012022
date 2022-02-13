@@ -28,6 +28,7 @@
   &__cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
     font-weight: $font-weight-middle;
   }
@@ -73,12 +74,15 @@
 .restaurant {
   @extend %padding-bloc;
   @include background-color-light;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: align-items;
+
   &__heading {
     padding-bottom: 20px;
+  }
+  &__cards {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: align-items;
   }
   &__card {
     background-color: #fff;
@@ -89,14 +93,16 @@
     box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1),
       0 4px 10px 0 rgba(97, 97, 97, 0.1);
   }
+
+  &__imagetag {
+    position: relative;
+    overflow: auto;
+  }
   &__image {
     height: 150px;
     width: 100%;
     object-fit: cover;
     object-position: center;
-  }
-  &__imagetag {
-    position: relative;
   }
   &__tag {
     background-color: $color-tertiary;
@@ -117,5 +123,26 @@
   &__like {
     @extend %icon-like;
     padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .fonctioning {
+    &__cards {
+      align-items: center;
+    }
+    &__card {
+      width: 45%;
+    }
+  }
+  .restaurant {
+    &__cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    &__card {
+      width: 45%;
+    }
   }
 }

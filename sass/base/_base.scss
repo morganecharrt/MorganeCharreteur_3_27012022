@@ -31,3 +31,21 @@ h2 {
 h2 {
   font-size: 18px;
 }
+
+.container {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-delay: 2000ms;
+  background-color: white;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

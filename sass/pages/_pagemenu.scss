@@ -40,6 +40,7 @@
     gap: 15px;
   }
   &__card {
+    cursor: pointer;
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
     display: flex;
@@ -47,7 +48,6 @@
     justify-content: space-between;
     overflow: hidden;
     animation: fadeCard ease 1s;
-    // opacity: 1;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
     @include transitionCard;
@@ -111,7 +111,7 @@
   }
   &__button {
     margin-top: 40px;
-    width: 50%;
+    padding: 15px 40px 15px 40px;
   }
 }
 
@@ -123,5 +123,18 @@
   100% {
     opacity: 1;
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    &__part-bloc {
+      width: 30%;
+    }
+    &__part {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
   }
 }
