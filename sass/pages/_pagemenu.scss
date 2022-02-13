@@ -16,8 +16,8 @@
   &__restaurant-title {
     display: flex;
     flex-direction: row;
-    align-items: center;
     align-items: baseline;
+    justify-content: space-around;
   }
   &__restaurant-name {
     font-family: $tittle-text;

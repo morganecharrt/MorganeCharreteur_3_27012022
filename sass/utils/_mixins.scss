@@ -19,7 +19,7 @@
 }
 
 @mixin transitionCard {
-  @for $i from 1 through 3 {
+  @for $i from 1 through 4 {
     &:nth-child(#{$i}) {
       animation-delay: #{$i * 0.2}s;
     }
