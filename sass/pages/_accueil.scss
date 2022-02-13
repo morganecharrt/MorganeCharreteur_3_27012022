@@ -66,7 +66,7 @@
   }
   &__icon {
     @extend %icon-bloc;
-    color: rgb(95, 95, 95);
+    color: $color-icon-gray;
   }
 }
 
@@ -76,6 +76,7 @@
   gap: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: align-items;
   &__heading {
     padding-bottom: 20px;
   }
@@ -114,7 +115,7 @@
     padding: 10px;
   }
   &__like {
+    @extend %icon-like;
     padding-right: 10px;
-    font-size: 22px;
   }
 }

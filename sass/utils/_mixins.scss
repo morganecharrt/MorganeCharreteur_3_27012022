@@ -17,3 +17,11 @@
 @mixin color-darker($colour: $color-tertiary) {
   color: darken($colour, 40%);
 }
+
+@mixin transitionCard {
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.2}s;
+    }
+  }
+}

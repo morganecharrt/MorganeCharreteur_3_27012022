@@ -1,11 +1,13 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
-$color-gradient: linear-gradient(
-  to bottom right,
-  $color-secondary,
-  $color-primary
+$color-gradient: linear-gradient(to left top, $color-primary, $color-secondary);
+$color-gradient-heart: linear-gradient(
+  to bottom,
+  $color-primary,
+  $color-secondary
 );
+$color-icon-gray: rgb(95, 95, 95);
 
 $background-color: gray;
 
