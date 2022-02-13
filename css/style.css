@@ -1,11 +1,8 @@
-.fonctioning,
-.restaurant,
-.menu__content {
+.fonctioning, .restaurant, .menu__content {
   padding: 40px 20px 70px 20px;
 }
 
-.fonctioning__card--active__icon,
-.fonctioning__icon {
+.fonctioning__card--active__icon, .fonctioning__icon {
   margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,25 +10,22 @@
   font-size: 18px;
 }
 
-.fonctioning__card--active__icon .fas,
-.fonctioning__icon .fas {
+.fonctioning__card--active__icon .fas, .fonctioning__icon .fas {
   width: 20px;
 }
 
-.restaurant__like,
-.menu__like {
+.restaurant__like, .menu__like {
   font-size: 22px;
 }
 
-.menu__card-title,
-.menu__card-subtitle {
+.menu__card-title, .menu__card-subtitle {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   line-height: 1.25;
 }
 
@@ -68,13 +62,13 @@ h2 {
 
 .container {
   -webkit-animation: fadeInAnimation ease 1s;
-  animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 2000ms;
-  animation-delay: 2000ms;
+          animation-delay: 2000ms;
   background-color: white;
 }
 
@@ -102,11 +96,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__icon {
@@ -152,37 +146,21 @@ h2 {
   padding: 15px 20px 15px 20px;
   border: none;
   border-radius: 50px;
-  background-image: -webkit-gradient(
-    linear,
-    right bottom,
-    left top,
-    from(#9356dc),
-    to(#ff79da)
-  );
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), to(#ff79da));
   background-image: linear-gradient(to left top, #9356dc, #ff79da);
   background-position: left;
   font-size: 15px;
-  -webkit-box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px,
-    rgba(83, 83, 83, 0.29) 0px 4px 10px -3px;
-  box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px,
-    rgba(83, 83, 83, 0.29) 0px 4px 10px -3px;
+  -webkit-box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 10px -3px;
+          box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 10px -3px;
   -webkit-transition: background-image 300ms ease-in;
   transition: background-image 300ms ease-in;
 }
 
 .button_gradient:hover {
-  background-image: -webkit-gradient(
-    linear,
-    right bottom,
-    left top,
-    from(#a16be0),
-    to(#ff93e1)
-  );
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#a16be0), to(#ff93e1));
   background-image: linear-gradient(to left top, #a16be0, #ff93e1);
-  -webkit-box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px,
-    rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
-  box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px,
-    rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
+  -webkit-box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
+          box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
   cursor: pointer;
 }
 
@@ -191,13 +169,7 @@ h2 {
   width: 24px;
   height: 48px;
   text-align: center;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9356dc),
-    to(#ff79da)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background-image: linear-gradient(to bottom, #9356dc, #ff79da);
   background-position: bottom;
   background-size: 24px 24px;
@@ -207,8 +179,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  transition: background-position 600ms ease-in-out,
-    -webkit-text-stroke-color 600ms ease-in-out;
+  transition: background-position 600ms ease-in-out, -webkit-text-stroke-color 600ms ease-in-out;
 }
 
 .fa-heart:hover {
@@ -219,22 +190,22 @@ h2 {
 @-webkit-keyframes spinner {
   0% {
     -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
-    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
   }
   100% {
     -webkit-transform: translate3d(-50%, -50%, 0) rotate(360deg);
-    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
 }
 
 @keyframes spinner {
   0% {
     -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
-    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
   }
   100% {
     -webkit-transform: translate3d(-50%, -50%, 0) rotate(360deg);
-    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
 }
 
@@ -245,32 +216,32 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 100%;
   height: 100vh;
 }
 
 .loader__circle::before {
   -webkit-animation: 2s linear infinite spinner;
-  animation: 2s linear infinite spinner;
+          animation: 2s linear infinite spinner;
   -webkit-animation-play-state: inherit;
-  animation-play-state: inherit;
+          animation-play-state: inherit;
   border: solid 10px whitesmoke;
   border-bottom-color: #9356dc;
   border-radius: 50%;
   content: "";
   -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
   will-change: transform;
   width: 120px;
   height: 120px;
@@ -284,14 +255,14 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 400;
   background-color: #e6e6e6;
   color: #444444;
   padding: 15px 0px 15px 0px;
   -webkit-box-shadow: inset 0 5px 5px -5px rgba(83, 83, 83, 0.39);
-  box-shadow: inset 0 5px 5px -5px rgba(83, 83, 83, 0.39);
+          box-shadow: inset 0 5px 5px -5px rgba(83, 83, 83, 0.39);
 }
 
 .location__icon {
@@ -321,11 +292,11 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
   font-weight: 400;
 }
@@ -337,22 +308,20 @@ h2 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: whitesmoke;
   border-radius: 20px;
   position: relative;
   left: 10px;
-  -webkit-box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px,
-    rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
-  box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px,
-    rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
+  -webkit-box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px, rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
+          box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px, rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
 }
 
 .fonctioning__card--active {
@@ -396,8 +365,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .restaurant__card {
@@ -409,12 +378,10 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1),
-    0 4px 10px 0 rgba(97, 97, 97, 0.1);
-  box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1),
-    0 4px 10px 0 rgba(97, 97, 97, 0.1);
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1), 0 4px 10px 0 rgba(97, 97, 97, 0.1);
+          box-shadow: 0 4px 10px 0 rgba(97, 97, 97, 0.1), 0 4px 10px 0 rgba(97, 97, 97, 0.1);
 }
 
 .restaurant__imagetag {
@@ -426,9 +393,9 @@ h2 {
   height: 150px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 
 .restaurant__tag {
@@ -448,8 +415,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
 }
 
@@ -460,8 +427,8 @@ h2 {
 @media (min-width: 768px) {
   .fonctioning__cards {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .fonctioning__card {
     width: 45%;
@@ -469,13 +436,13 @@ h2 {
   .restaurant__cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .restaurant__card {
     width: 45%;
@@ -486,7 +453,7 @@ h2 {
   height: 250px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .menu__content {
@@ -495,8 +462,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: whitesmoke;
   border-radius: 50px 50px 0 0;
   margin-top: -50px;
@@ -509,13 +476,13 @@ h2 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .menu__restaurant-name {
@@ -541,8 +508,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
 }
 
@@ -550,41 +517,41 @@ h2 {
   cursor: pointer;
   background-color: white;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
   -webkit-animation: fadeCard ease 1s;
-  animation: fadeCard ease 1s;
+          animation: fadeCard ease 1s;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
   -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 .menu__card:nth-child(1) {
   -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .menu__card:nth-child(2) {
   -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .menu__card:nth-child(3) {
   -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .menu__card:nth-child(4) {
   -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .menu__card:hover .menu__card-animation {
@@ -593,17 +560,17 @@ h2 {
 
 .menu__card:hover .menu__icon {
   -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .menu__card-container {
   padding: 10px 0px 10px 10px;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -641,11 +608,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu__icon {
@@ -655,13 +622,13 @@ h2 {
   color: white;
   text-align: center;
   -webkit-transform: rotate(-240deg);
-  transform: rotate(-240deg);
+          transform: rotate(-240deg);
   -webkit-transition: -webkit-transform 300ms ease-out;
   transition: -webkit-transform 300ms ease-out;
   transition: transform 300ms ease-out;
   transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
   -webkit-transition-delay: 120ms;
-  transition-delay: 120ms;
+          transition-delay: 120ms;
 }
 
 .menu__bloc-button {
@@ -704,9 +671,9 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
