@@ -387,6 +387,7 @@ h2 {
 .restaurant__imagetag {
   position: relative;
   overflow: auto;
+  height: 150px;
 }
 
 .restaurant__image {
