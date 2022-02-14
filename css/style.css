@@ -44,6 +44,7 @@ button {
 
 .header-container {
   text-align: center;
+  background-color: white;
 }
 
 a {
@@ -448,6 +449,25 @@ h2 {
   .restaurant__card {
     width: 45%;
   }
+}
+
+.container-pagemenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: whitesmoke;
+  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  margin-bottom: auto;
 }
 
 .menu__image {

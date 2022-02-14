@@ -1,4 +1,12 @@
+.container-pagemenu {
+  display: flex;
+  flex-direction: column;
+  @include background-color-light;
+  height: 100vh;
+  justify-content: space-between;
+}
 .menu {
+  margin-bottom: auto;
   &__image {
     height: 250px;
     width: 100%;
