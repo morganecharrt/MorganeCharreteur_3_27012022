@@ -9,9 +9,16 @@
 @mixin background-color-light($colour: $background-color) {
   background-color: lighten($colour, 46%);
 }
+@mixin background-color-light-hover($colour: $background-color) {
+  background-color: lighten($colour, 48%);
+}
 
 @mixin background-color-light-purple($colour: $color-primary) {
   background-color: lighten($colour, 35%);
+}
+
+@mixin background-color-light-purple-hover($colour: $color-primary) {
+  background-color: lighten($colour, 37%);
 }
 
 @mixin color-darker($colour: $color-tertiary) {

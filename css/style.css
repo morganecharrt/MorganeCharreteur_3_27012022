@@ -321,8 +321,15 @@ h2 {
   border-radius: 20px;
   position: relative;
   left: 10px;
+  cursor: pointer;
   -webkit-box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px, rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
           box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px, rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
+}
+
+.fonctioning__card:hover {
+  background-color: #fafafa;
+  -webkit-box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
+          box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
 }
 
 .fonctioning__card--active {
@@ -331,6 +338,12 @@ h2 {
 
 .fonctioning__card--active__icon {
   color: #9356dc;
+}
+
+.fonctioning__card--active:hover {
+  background-color: #f7f2fc;
+  -webkit-box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
+          box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px, rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
 }
 
 .fonctioning__number {

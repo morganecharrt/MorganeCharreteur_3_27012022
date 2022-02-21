@@ -42,14 +42,27 @@
     border-radius: 20px;
     position: relative;
     left: 10px;
+    cursor: pointer;
     box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 20px 10px,
       rgba(83, 83, 83, 0.29) 0px 4px 10px -2px;
+
+    &:hover {
+      @include background-color-light-hover;
+      box-shadow: rgba(83, 83, 83, 0.02) 0px 6px 10px -2px,
+        rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
+    }
   }
+
   &__card--active {
     @include background-color-light-purple;
     &__icon {
       color: $color-primary;
       @extend %icon-bloc;
+    }
+    &:hover {
+      @include background-color-light-purple-hover;
+      box-shadow: rgba(83, 83, 83, 0.29) 0px 6px 10px -2px,
+        rgba(83, 83, 83, 0.29) 0px 4px 20px -3px;
     }
   }
   &__number {
